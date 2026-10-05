@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relationship Reset with Jen</title>
+<meta name="description" content="Somatic relationship coaching for people who fall too hard, too fast. 12 weeks of 1:1 coaching to help you feel the rush, come back to yourself, and stay in your truth while you date.">
+<meta property="og:title" content="Relationship Reset with Jen">
+<meta property="og:description" content="Stop falling too hard, too fast. 12 weeks of 1:1 somatic relationship coaching. 3 founding spots.">
+<meta property="og:image" content="img/hero-tall.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f8f6f2;
+    --white: #ffffff;
+    --ink: #2b2624;
+    --soft: #6f6964;
+    --gold: #c4a574;
+    --gold-soft: #f1e9dc;
+    --line: #ece7df;
+    --dark: #2f2a27;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--white); color: var(--ink);
+    font-family: Inter, -apple-system, system-ui, sans-serif; font-size: 17px; line-height: 1.7;
+  }
+  h1, h2, h3 { font-family: "Libre Baskerville", Georgia, serif; font-weight: 400; line-height: 1.25; margin: 0; }
+  p { margin: 0; }
+  a { color: inherit; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 88px 0; }
+  .cream { background: var(--cream); }
+  .eyebrow {
+    text-align: center; text-transform: uppercase; letter-spacing: .18em;
+    font-size: 13px; font-weight: 600; color: var(--gold); margin-bottom: 14px;
+  }
+  h2 { text-align: center; font-size: clamp(28px, 6vw, 38px); }
+  .lead { text-align: center; color: var(--soft); margin: 18px auto 48px; max-width: 560px; }
+
+  /* Hero: one photo filling the top, words over the backdrop above her face */
+  .hero { position: relative; background: rgb(170,160,128); color: #fff; text-align: center; overflow: hidden; }
+  .hero-photo { display: block; width: 100%; max-width: min(760px, 58vh); margin: 0 auto; height: auto; }
+  .hero-text { position: absolute; left: 0; right: 0; top: 0; padding: 48px 20px 0; }
+  .hero-text .inner { max-width: 600px; margin: 0 auto; }
+  .hero-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 26%; background: linear-gradient(180deg, rgba(47,42,39,0) 0%, rgba(47,42,39,.8) 100%); }
+  .hero-cta { position: absolute; left: 0; right: 0; bottom: 30px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  @media (min-width: 760px) {
+    .hero-photo { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 86%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 86%, transparent 100%); }
+  }
+  .pill {
+    display: inline-block; background: rgba(255,255,255,.92); color: var(--ink);
+    border-radius: 999px; padding: 8px 18px; font-size: 12px; letter-spacing: .16em;
+    text-transform: uppercase; font-weight: 600; margin-bottom: 22px;
+  }
+  .pill::before { content: "●"; color: var(--gold); margin-right: 8px; }
+  .hero h1 { font-size: clamp(38px, 9vw, 64px); text-shadow: 0 1px 12px rgba(0,0,0,.12); }
+  .hero h1 em { font-style: italic; }
+  .hero .sub { font-size: 17px; margin: 16px auto 0; max-width: 540px; text-shadow: 0 1px 10px rgba(0,0,0,.15); }
+  .hero .small { font-size: 14px; opacity: .9; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+    border-radius: 999px; padding: 17px 30px; font-weight: 600; font-size: 16px;
+    transition: transform .15s ease, opacity .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); opacity: .92; }
+  .btn-light { background: #fff; color: var(--ink); }
+  .btn-gold { background: var(--gold); color: #fff; }
+  .btn-ghost { border: 1.5px solid rgba(255,255,255,.55); color: #fff; }
+
+  /* Cards */
+  .cards { display: grid; gap: 16px; }
+  .card {
+    display: flex; gap: 18px; align-items: flex-start; background: #fbfaf8;
+    border: 1px solid var(--line); border-radius: 22px; padding: 24px 26px;
+  }
+  .cream .card { background: #fff; }
+  .dot {
+    flex: 0 0 44px; height: 44px; border-radius: 50%; background: var(--gold-soft);
+    color: var(--gold); display: grid; place-items: center; font-size: 18px;
+  }
+  .card p { color: #4a4542; }
+
+  /* Story */
+  .story p { color: #4a4542; margin-bottom: 18px; text-align: center; }
+  .story p strong { color: var(--ink); font-weight: 600; }
+  .story .quote { font-family: "Libre Baskerville", Georgia, serif; font-style: italic; font-size: 22px; color: var(--ink); margin-top: 30px; }
+  .price-label { margin-top: 22px; color: var(--gold); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; }
+
+  /* Method */
+  .step { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 30px; }
+  .step.feature { border-color: #ecdcc2; box-shadow: 0 10px 30px rgba(196,165,116,.15); }
+  .step-head { display: flex; align-items: center; gap: 18px; margin-bottom: 18px; }
+  .num { font-family: "Libre Baskerville", Georgia, serif; font-size: 40px; color: #d6d0c8; }
+  .badge {
+    width: 64px; height: 64px; border-radius: 50%; background: var(--ink); color: #fff;
+    display: grid; place-items: center; font-size: 24px;
+  }
+  .feature .badge { background: var(--gold); }
+  .step h3 { font-size: 26px; margin-bottom: 4px; }
+  .step .when { color: var(--gold); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; margin-bottom: 10px; }
+  .step p { color: var(--soft); }
+
+  /* Included */
+  .included { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .included li {
+    background: #fbfaf8; border: 1px solid var(--line); border-radius: 18px; padding: 20px 24px;
+  }
+  .included strong { display: block; font-weight: 600; margin-bottom: 2px; }
+  .included span { color: var(--soft); }
+
+  /* About */
+  .about-img { width: 100%; max-width: 420px; display: block; margin: 0 auto 36px; border-radius: 24px; aspect-ratio: 4/5; object-fit: cover; object-position: center 25%; }
+  .about p { color: #4a4542; margin-bottom: 18px; }
+  .about .sign { font-family: "Libre Baskerville", Georgia, serif; font-style: italic; font-size: 22px; color: var(--ink); }
+
+  /* Price */
+  .price-card {
+    background: #fff; border: 1px solid #ecdcc2; border-radius: 28px; padding: 40px 30px;
+    text-align: center; box-shadow: 0 14px 40px rgba(196,165,116,.15);
+  }
+  .spots { display: inline-block; background: var(--gold-soft); color: #9a7b48; border-radius: 999px; padding: 6px 16px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .price { font-family: "Libre Baskerville", Georgia, serif; font-size: clamp(38px, 9vw, 52px); margin: 4px 0 4px; }
+  .price-alt { color: var(--soft); }
+  .was { color: var(--soft); margin-top: 14px; }
+  .was s { opacity: .8; }
+  .price-card .why { color: #4a4542; margin: 26px auto 30px; max-width: 480px; }
+
+  /* FAQ */
+  details { border-bottom: 1px solid var(--line); padding: 20px 0; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--gold); font-size: 22px; line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  details p { color: var(--soft); margin-top: 12px; }
+
+  /* Final */
+  .final { background: var(--dark); color: #fff; text-align: center; }
+  .final h2 { color: #fff; }
+  .final .lead { color: rgba(255,255,255,.75); }
+  .final .actions { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .final .small { color: rgba(255,255,255,.6); font-size: 14px; margin-top: 18px; }
+  footer { background: var(--dark); color: rgba(255,255,255,.5); text-align: center; font-size: 14px; padding: 0 20px 40px; }
+
+  @media (min-width: 760px) {
+    .final .actions { flex-direction: row; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="hero-photo" src="img/hero-tall.jpg" alt="Jen, holding a bouquet of flowers">
+  <div class="hero-text"><div class="inner">
+    <span class="pill">Somatic relationship coaching</span>
+    <h1>Stop falling<br><em>too hard, too fast</em></h1>
+    <p class="sub">12 weeks of 1:1 coaching to help you feel the rush, come back to yourself, and stay in your truth while you date.</p>
+  </div></div>
+  <div class="hero-fade"></div>
+  <div class="hero-cta">
+    <a class="btn btn-light cta" href="#book">Book a free Reset Call →</a>
+    <span class="small">3 founding spots · online · 1:1</span>
+  </div>
+</header>
+
+<!-- RECOGNITION -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Recognition</div>
+    <h2>This is for you if you</h2>
+    <p class="lead">Do any of these feel familiar?</p>
+    <div class="cards">
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><p>Fall fast, and mistake intensity for connection</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-5.9-2.3l-3.6-3.6a2 2 0 0 1 2.8-2.8L7 15"/></svg></div><p>Over-give, people-please or go quiet about your needs to keep someone close</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div><p>Lose yourself in someone new and start rearranging your whole life around them</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><p>Need constant reassurance, closeness or sex to feel okay</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></div><p>Give your whole heart to someone you've only just met, and lose yourself when it ends</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4h5a2 2 0 0 1 2 2v14"/><path d="M4 20V6l9-2v16"/><path d="M2 20h20"/><path d="M10 12v.01"/></svg></div><p>Stay too long in the wrong relationship, because leaving feels like failing or being "too picky"</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><p>Want to slow down, without shutting down completely</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></div><p>Want calm, secure love without losing your voice</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="cream story">
+  <div class="wrap">
+    <div class="eyebrow">Why it keeps happening</div>
+    <h2>It's not that you're too much</h2>
+    <p class="lead" style="margin-bottom:36px">Your body learned to read the rush as love. And the anxiety isn't the enemy.</p>
+    <p>When uncertainty feels unbearable, we bond fast to make it stop. We fall for someone's <strong>potential</strong> before we've seen their <strong>reality</strong>, and by the time the truth shows up, we're too deep to leave.</p>
+    <p>Reading another book doesn't change this, because the pattern doesn't live in your head. <strong>It lives in your nervous system.</strong> So that's where we work: you learn to hear what your body is telling you, before your mind builds a future.</p>
+    <p>The goal isn't to never feel anxious again. Some of that will always be there when you care about someone. The goal is to <strong>notice it, check in with yourself, and still choose your truth</strong>, even on the days you can't follow the dating "rules".</p>
+    <p class="quote">Discernment is free. Heartbreak is expensive.</p>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="cream" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">The approach</div>
+    <h2>The Relationship Reset Method</h2>
+    <p class="lead">Three stages, one month each, built on nervous-system work.</p>
+    <div class="cards">
+      <div class="step">
+        <div class="step-head"><div class="badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></div><span class="num">01</span></div>
+        <div class="when">Month 1</div>
+        <h3>Regulate</h3>
+        <p>Notice the rush and settle yourself enough to choose your next step, instead of being driven by it. So chaos stops feeling like love.</p>
+      </div>
+      <div class="step feature">
+        <div class="step-head"><div class="badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg></div><span class="num">02</span></div>
+        <div class="when">Month 2</div>
+        <h3>Choose</h3>
+        <p>Know your needs, say them without apologising, and choose partners for safety, values and self-trust, not chemistry alone.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><div class="badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div><span class="num">03</span></div>
+        <div class="when">Month 3</div>
+        <h3>Embody</h3>
+        <p>Live it in real dating. Truth, boundaries and intimacy that feel honest, mutual and grounded, with me in your corner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT CHANGES -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Transformation</div>
+    <h2>What changes</h2>
+    <p class="lead">After these 12 weeks, you'll be able to:</p>
+    <div class="cards">
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><p>Feel your yes and your no clearly, and act on them</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><p>Stop chasing people who aren't emotionally available</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><p>Stay present with yourself as things get closer, even when anxiety shows up</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><p>Ask for what you need, even when it still feels scary</p></div>
+      <div class="card"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><p>Feel intimacy that is safe, present and mutual</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="cream">
+  <div class="wrap">
+    <div class="eyebrow">What you get</div>
+    <h2>12 weeks, just you and me</h2>
+    <p class="lead">Simple on purpose, so it fits into a real life.</p>
+    <ul class="included">
+      <li><strong>12 weekly 1:1 sessions, 60 minutes, online</strong><span>A mix of talking things through and guided body-based practice, shaped around what you need that week.</span></li>
+      <li><strong>Voice-note support between sessions</strong><span>When something happens in dating, you don't wait a week. Send me a voice note on a weekday and I'll reply within 24 hours.</span></li>
+      <li><strong>Small, simple practices for your week</strong><span>Some of the change happens between sessions, in your everyday life. Sometimes I'll give you a small practice to try. Nothing heavy, and always at your pace.</span></li>
+      <li><strong>Your real life as the practice ground</strong><span>Dating right now, a few dates in, or not ready to date yet? All of it works. We start from where you actually are.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="wrap">
+    <div class="eyebrow">About</div>
+    <h2 style="margin-bottom:36px">Hey, I'm Jen</h2>
+    <img class="about-img" src="img/about.jpg" alt="Jen, somatic relationship coach">
+    <p>I'm a somatic sex and relationship coach, and I've been where you are. I used to confuse intensity with safety, and give my heart away early because I couldn't sit with not knowing.</p>
+    <p>Somatic work changed that for me. I still feel anxious sometimes. The difference is that I know how to come back to myself, check in, and stay with myself while being with someone else. I practise it every day, in my own dating life.</p>
+    <p>I believe choosing love shouldn't mean losing yourself. My job is to help you say what you need, hold your boundaries, and let the right person meet you there.</p>
+    <p class="sign">Jen</p>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="cream" id="price">
+  <div class="wrap">
+    <div class="eyebrow">Founding offer</div>
+    <h2>Be one of my first three</h2>
+    <p class="lead">I'm opening Relationship Reset to 3 founding clients at a lower price, in exchange for your honest feedback and a few words about your experience at the end.</p>
+    <div class="price-card">
+      <span class="spots">Only for the first 3 clients</span>
+      <div class="price-label">Founding price</div>
+      <div class="price" data-za="R25,000" data-intl="$1,500">R25,000</div>
+      <div class="was">Full price after the founding spots: <span data-za="R36,000" data-intl="$2,400">R36,000</span></div>
+      <p class="why">Pay in full, or in 3 monthly payments of <span data-za="R8,500" data-intl="$520">R8,500</span>. Your 12 weeks begin once your first payment is in.</p>
+      <a class="btn btn-gold cta" href="#book">Book a free Reset Call →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Questions</div>
+    <h2 style="margin-bottom:28px">Good to know</h2>
+    <details><summary>Is this therapy?</summary><p>No. This is coaching. We work with what is happening in your dating life now, through your body and your choices.</p><p>It works best if you already have some ways to calm yourself when things get hard. If you're carrying severe trauma, such as sexual assault or abuse, and haven't yet had support with it, please start with a trauma-informed therapist. Coaching can come alongside that, or after it, and I'm happy to talk it through on the free call.</p></details>
+    <details><summary>Do I need to be dating someone right now?</summary><p>No. Whether you're single, swiping, or a few dates in, we work with where you are.</p></details>
+    <details><summary>What does "somatic" mean?</summary><p>It means working with the body, not only thoughts. Anxious attachment shows up as a racing heart, a tight chest, the urge to text right now. We learn to notice that and settle it, so you can choose instead of react.</p></details>
+    <details><summary>Where does it happen?</summary><p>Online, on video calls, so you can join from anywhere. We pick a weekly time that works for both of us.</p></details>
+    <details><summary>What happens on the free Reset Call?</summary><p>30 minutes to talk about what's been happening for you and what you want instead. If it feels like a fit, I'll tell you how we'd work together. If not, no pressure at all.</p></details>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final" id="book">
+  <div class="wrap">
+    <h2>Ready to stop falling too fast?</h2>
+    <p class="lead">Start with a free 30-minute Reset Call.</p>
+    <div class="actions">
+      <a class="btn btn-light cta" href="#book">Book a free Reset Call →</a>
+    </div>
+    <p class="small">Free · 30 minutes · No pressure, just connection</p>
+  </div>
+</section>
+<footer>© 2026 Relationship Reset with Jen</footer>
+
+<script>
+  // One place to change where every "Book a free Reset Call" button goes.
+  const BOOKING_LINK = "https://wa.me/27657199045?text=" + encodeURIComponent("Hi Jen, I'd like to book a free Reset Call.");
+
+  // One price per visitor: rand for South Africa, dollars for everyone else.
+  // Guessed from the visitor's time zone, no tracking, nothing sent anywhere.
+  // Jen can force a currency for one person by sending the link with ?usd or ?zar on the end,
+  // e.g. for an international living in Cape Town (their phone says South Africa).
+  let inSA = true;
+  try { inSA = Intl.DateTimeFormat().resolvedOptions().timeZone === "Africa/Johannesburg"; } catch (e) {}
+  const q = location.search.toLowerCase();
+  if (q.includes("usd")) inSA = false;
+  if (q.includes("zar")) inSA = true;
+  document.querySelectorAll("[data-za]").forEach(el => { el.textContent = inSA ? el.dataset.za : el.dataset.intl; });
+  if (BOOKING_LINK !== "#book") {
+    document.querySelectorAll("a.cta").forEach(a => { a.href = BOOKING_LINK; a.target = "_blank"; a.rel = "noopener"; });
+  }
+</script>
+</body>
+</html>
