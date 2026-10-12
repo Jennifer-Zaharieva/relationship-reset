@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Relationship Reset with Jen</title>
-<meta name="description" content="Somatic relationship coaching for people who fall too hard, too fast. 12 weeks of 1:1 coaching to help you feel the rush, come back to yourself, and stay in your truth while you date.">
+<meta name="description" content="Somatic relationship coaching. 12 weeks of 1:1 coaching to help you break unhealthy dating patterns, recognise when someone isn't right for you, and build relationships without abandoning your needs.">
 <meta property="og:title" content="Relationship Reset with Jen">
-<meta property="og:description" content="Stop falling too hard, too fast. 12 weeks of 1:1 somatic relationship coaching. 3 founding spots.">
-<meta property="og:image" content="img/hero-mobile.jpg">
+<meta property="og:description" content="Stop choosing love over yourself. 12 weeks of 1:1 somatic relationship coaching. 3 founding spots.">
+<meta property="og:image" content="img/hero-v2.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -161,11 +161,11 @@
 
 <!-- HERO -->
 <header class="hero">
-  <img class="hero-photo" src="img/hero-mobile.jpg" alt="Jen, holding a bouquet of flowers">
+  <img class="hero-photo" src="img/hero-v2.jpg" alt="Jen, holding a bouquet of flowers">
   <div class="hero-text"><div class="inner">
     <span class="pill">Somatic relationship coaching</span>
-    <h1>Stop falling<br><em>too hard, too fast</em></h1>
-    <p class="sub">12 weeks of 1:1 coaching to help you feel the rush, come back to yourself, and stay in your truth while you date.</p>
+    <h1>Stop choosing<br><em>love over yourself</em></h1>
+    <p class="sub">12 weeks of 1:1 coaching to help you break unhealthy dating patterns, recognise when someone isn't right for you, and build relationships without abandoning your needs.</p>
   </div></div>
   <div class="hero-fade"></div>
   <div class="hero-cta">
@@ -287,10 +287,7 @@
     <p class="lead">I'm opening Relationship Reset to 3 founding clients at a lower price, in exchange for your honest feedback and a few words about your experience at the end.</p>
     <div class="price-card">
       <span class="spots">Only for the first 3 clients</span>
-      <div class="price-label">Founding price</div>
-      <div class="price" data-za="R25,000" data-intl="$1,500">R25,000</div>
-      <div class="was">Full price after the founding spots: <span data-za="R36,000" data-intl="$2,400">R36,000</span></div>
-      <p class="why">Pay in full, or in 3 monthly payments of <span data-za="R8,500" data-intl="$520">R8,500</span>. Your 12 weeks begin once your first payment is in.</p>
+      <p class="why">Founding clients join at a special lower price. We'll go through everything, including the price and payment options, on your free Reset Call.</p>
       <a class="btn btn-gold cta" href="#book">Book a free Reset Call →</a>
     </div>
   </div>
@@ -312,7 +309,7 @@
 <!-- FINAL -->
 <section class="final" id="book">
   <div class="wrap">
-    <h2>Ready to stop falling too fast?</h2>
+    <h2>Ready to stop choosing love over yourself?</h2>
     <p class="lead">Start with a free 30-minute Reset Call.</p>
     <div class="actions">
       <a class="btn btn-light cta" href="#book">Book a free Reset Call →</a>
@@ -326,16 +323,6 @@
   // One place to change where every "Book a free Reset Call" button goes.
   const BOOKING_LINK = "https://wa.me/27657199045?text=" + encodeURIComponent("Hi Jen, I'd like to book a free Reset Call.");
 
-  // One price per visitor: rand for South Africa, dollars for everyone else.
-  // Guessed from the visitor's time zone, no tracking, nothing sent anywhere.
-  // Jen can force a currency for one person by sending the link with ?usd or ?zar on the end,
-  // e.g. for an international living in Cape Town (their phone says South Africa).
-  let inSA = true;
-  try { inSA = Intl.DateTimeFormat().resolvedOptions().timeZone === "Africa/Johannesburg"; } catch (e) {}
-  const q = location.search.toLowerCase();
-  if (q.includes("usd")) inSA = false;
-  if (q.includes("zar")) inSA = true;
-  document.querySelectorAll("[data-za]").forEach(el => { el.textContent = inSA ? el.dataset.za : el.dataset.intl; });
   if (BOOKING_LINK !== "#book") {
     document.querySelectorAll("a.cta").forEach(a => { a.href = BOOKING_LINK; a.target = "_blank"; a.rel = "noopener"; });
   }
